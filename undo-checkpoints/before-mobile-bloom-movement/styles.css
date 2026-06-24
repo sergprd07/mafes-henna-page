@@ -1810,14 +1810,12 @@ body.lightbox-open {
     right: -21vw;
     bottom: -2vh;
     width: clamp(270px, 72vw, 360px);
-    transform: translate3d(calc(var(--bloom-drift) * 0.004), calc(var(--bloom-drift) * -0.018), 0) rotate(-1deg);
   }
 
   .bloom-video-branch {
     right: -44vw;
     bottom: 70px;
     width: clamp(300px, 88vw, 390px);
-    transform: translate3d(calc(var(--bloom-drift) * 0.004), calc(var(--bloom-drift) * -0.01), 0) rotate(-91deg);
   }
 
   .hero-actions,

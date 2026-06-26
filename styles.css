@@ -1925,6 +1925,22 @@ body.lightbox-open {
     }
   }
 
+  html.mobile-date-field .booking-form input[data-mobile-date-field="true"] {
+    inline-size: 100%;
+    max-inline-size: 100%;
+    min-block-size: 58px;
+    line-height: 1.35;
+    color: var(--ivory);
+    font-family: var(--copy-serif);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  html.mobile-date-field .booking-form input[data-mobile-date-field="true"]::placeholder {
+    color: rgba(251, 245, 236, 0.72);
+    opacity: 1;
+  }
+
   .section-heading h2,
   .stain-map-heading h2,
   .visit-copy h2,

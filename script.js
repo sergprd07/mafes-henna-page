@@ -4,6 +4,7 @@ const nav = document.querySelector(".site-nav");
 const tabs = document.querySelectorAll("[data-tab]");
 const panels = document.querySelectorAll("[data-panel]");
 const bookingForm = document.querySelector("[data-booking-form]");
+const bookingDateInput = bookingForm?.querySelector('input[name="date"]');
 const motionPanels = document.querySelectorAll("[data-motion]");
 const bloomWatermarks = document.querySelector("[data-bloom-watermarks]");
 const bloomFrames = document.querySelectorAll(".bloom-frame");
@@ -25,6 +26,17 @@ let bloomScrubProgress = 0;
 let lastBloomScrollY = window.scrollY;
 let lastWheelScrubAt = 0;
 let lastTouchY = null;
+
+const isMobileDateField = window.matchMedia("(max-width: 620px)").matches;
+
+if (bookingDateInput && isMobileDateField) {
+  document.documentElement.classList.add("mobile-date-field");
+  bookingDateInput.type = "text";
+  bookingDateInput.inputMode = "numeric";
+  bookingDateInput.placeholder = "mm/dd/yyyy";
+  bookingDateInput.autocomplete = "off";
+  bookingDateInput.dataset.mobileDateField = "true";
+}
 
 const portfolioCatalog = [
   {

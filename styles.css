@@ -1876,6 +1876,36 @@ body.lightbox-open {
     padding-inline: 18px;
   }
 
+  .booking-grid {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .booking-form {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 24px clamp(16px, 5vw, 22px);
+    overflow: hidden;
+  }
+
+  .booking-form label,
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    padding-inline: 14px;
+    font-size: 1rem;
+  }
+
   .section-heading h2,
   .stain-map-heading h2,
   .visit-copy h2,

@@ -1902,8 +1902,27 @@ body.lightbox-open {
   .booking-form input,
   .booking-form select,
   .booking-form textarea {
+    display: block;
+    box-sizing: border-box;
+    inline-size: 100%;
     padding-inline: 14px;
     font-size: 1rem;
+  }
+
+  .booking-form input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    align-self: stretch;
+    min-inline-size: 0;
+    inline-size: 100%;
+    max-inline-size: 100%;
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    .booking-form input[type="date"] {
+      inline-size: -webkit-fill-available;
+      max-inline-size: -webkit-fill-available;
+    }
   }
 
   .section-heading h2,
